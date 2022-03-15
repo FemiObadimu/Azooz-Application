@@ -5,7 +5,9 @@ const Loading = () => {
   return (
     <div className="loading flex justify-center align-center">
       <div>
-        <h1 className="loading-text text-center">Azooz </h1>
+        <h1 className="loading-text text-center">
+          
+        </h1>
       </div>
       <div>
         <ThreeDots className="oval" width="50" />

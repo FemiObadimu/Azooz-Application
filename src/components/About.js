@@ -6,10 +6,6 @@ import { Switch } from "@headlessui/react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Azoozpic from "../azooz-images/azoozpic.jpg";
-import Fintech1 from "../azooz-images/Fintech1.webp";
-import Ecommerce from "../azooz-images/E-commerce.png";
-import Sport from "../azooz-images/fitness-sport2.webp";
-import VR from "../azooz-images/azooz-2.jpg";
 
 const navigation = [
   { name: "About", to: "/about", current: false },
@@ -73,7 +69,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-const Work = () => {
+const About = () => {
   const [loading, setLoading] = useState(true);
 
   setTimeout(() => {
@@ -102,7 +98,7 @@ const Work = () => {
                       <h1 className="text-lg font-medium text-center">
                         <a href="/">
                           <div className="logo"></div>
-                        </a>
+                        </a>{" "}
                       </h1>
                     </div>
                     <div className="flex ">
@@ -318,94 +314,103 @@ const Work = () => {
           </Disclosure>
 
           <div className="main-content">
-            <section id="#works" className="py-8">
-              <div className="text-gray-600 pl-20 ">
-                <p className="text-4xl font-bold main-clr">My Projects</p>
+            <div>
+              <div className="text-gray-600 pl-20 py-10 " data-aos="fade-up">
+                <p className="text-4xl font-bold main-clr">Summary</p>
                 <div>
-                  Over the past few years I’ve had the chance to work on
-                  multiple projects with a human <br /> centered approach and
-                  empathy driven mindset. Projects range from a simple redesign
-                  to a complete user experience revamp.
+                  <p className="text-gray-600 py-2 ">
+                    Possession of skills, some of which are part of the
+                    prerequisites for a creative mind such as brand identity
+                    design, products design, research and content creation
+                    skills, t and writing communication, Microsoft Office
+                    package: Microsoft Word, Excel etc., Graphic Designing, and
+                    Online Communication skill.
+                  </p>
+
+                  <p className="text-gray-600 py-2">
+                    I understand that you there are quite a large number of
+                    Graphic Designers out there, I do, however, believe that my
+                    motivation, commitment and pre-existing skills will allow me
+                    to fit into your work environment and immediately start
+                    supporting the various needs of your institution.
+                  </p>
+
+                  <p className="text-gray-600 py-2">
+                    Team work has never failed, as "Together Everyone Achieve
+                    More". In light of this, I'll be ready and willing to join
+                    any available team for your project in order to enhance the
+                    success of it.
+                  </p>
+
+                  <p className="text-gray-600 py-2">
+                    I'm calm and cool, I take careful note of guidelines and
+                    instructions and finally, I don't give up until something is
+                    done right!
+                  </p>
                 </div>
               </div>
-            </section>
 
-            <section className="py-6">
-              <div className="mt-20">
-                <div className="">
-                  <div className="mb-10 flex flex-row  flex-wrap justify-evenly items-center">
-                    {/* Project card*/}
-
-                    <div
-                      className=" mb-5 rounded-2xl overflow-hidden"
-                      data-aos="zoom-in-left"
-                    >
-                      <div className="tags">
-                        <p>Fintech</p>
-                      </div>
-                      <img
-                        className=" works1 object-cover"
-                        src={Fintech1}
-                        alt="azooz"
-                      />
-                    </div>
-
-                    {/* Project card*/}
-
-                    <div
-                      className="mb-5 rounded-2xl overflow-hidden"
-                      data-aos="zoom-in-right"
-                    >
-                      <div className="tags">
-                        <p>VR|AR</p>
-                      </div>
-
-                      <img
-                        className="works1  h-full w-full object-cover"
-                        src={VR}
-                        alt="azooz"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="mb-10 flex flex-row  flex-wrap justify-evenly items-center">
-                    {/* Project card*/}
-
-                    <div
-                      className="mb-5 rounded-2xl overflow-hidden"
-                      data-aos="zoom-in-left"
-                    >
-                      <div className="tags">
-                        <p>Ecommerce</p>
-                      </div>
-
-                      <img
-                        className="works1  h-full w-full object-cover"
-                        src={Ecommerce}
-                        alt="azooz"
-                      />
-                    </div>
-
-                    {/* Project card*/}
-
-                    <div
-                      className=" mb-5 rounded-2xl overflow-hidden"
-                      data-aos="zoom-in-right"
-                    >
-                      <div className="tags">
-                        <p>Sport|Health</p>
-                      </div>
-
-                      <img
-                        className="works1  h-full w-full object-cover"
-                        src={Sport}
-                        alt="azooz"
-                      />
-                    </div>
-                  </div>
+              <div className="text-gray-600 pl-20 py-20 " data-aos="fade-up">
+                <p className="text-4xl font-bold main-clr">Contributions</p>
+                <div>
+                  <p className="text-gray-600 py-2">
+                    Home of Design 1.0 <br />
+                    Along with some individuals who are vast in the designing
+                    concept and principles, I took some students through basic
+                    graphic designing training where they learn a lot about
+                    creative design principles.
+                  </p>
                 </div>
               </div>
-            </section>
+
+              <div className="text-gray-600 pl-20 py-20 " data-aos="fade-up">
+                <p className="text-4xl font-bold main-clr">Work Experience</p>
+
+                {/* Images Goes Here */}
+              </div>
+
+              <div className="text-gray-600 pl-20 py-20 " data-aos="fade-up">
+                <p className="text-4xl font-bold main-clr">
+                  Skills & Expertise
+                </p>
+                <div>
+                  <h1 className="font-bold main-clr">Graphic Designing</h1>
+                  <p className="text-gray-600 py-2 ">
+                    Designing flyers, logos, rebranding Small and Medium
+                    Enterprises, creative design and visuals.
+                  </p>
+
+                  <h1 className="font-bold main-clr">UI/UX Designing</h1>
+
+                  <p className="text-gray-600 py-2">
+                    Wireframing, Prototyping, design of a responsive mobile and
+                    desktop UI for an awesome User Experience.
+                  </p>
+
+                  <h1 className="font-bold main-clr">Tools</h1>
+
+                  <p className="text-gray-600 py-2">
+                    Figma, Adobe Photoshop, Adobe XD, Adobe Illustrator,
+                    CorelDraw, and Swift XR.
+                  </p>
+                </div>
+              </div>
+
+              <div className="text-gray-600 pl-20 py-20 " data-aos="fade-up">
+                <p className="text-4xl font-bold main-clr">
+                  Open to Opportunities
+                </p>
+                <div>
+                  <p className="text-gray-600 py-2">
+                    With the available knowledge and experience I have gained
+                    over the years, I will like to join your team of
+                    professionals to implement my skills in building a strong
+                    and effective project. You can contact me for any designing
+                    tasks.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
           <section id="contact">
             <div className="relative">
@@ -494,4 +499,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default About;
