@@ -274,7 +274,13 @@ const Work = () => {
                           </span>
                         </span>
                       </Switch>
-                      <Disclosure.Button className="bg-white inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2">
+                      <Disclosure.Button
+                        className={
+                          enabled
+                            ? " inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500  focus:outline-none focus:ring-2 focus:ring-offset-2"
+                            : "bg-white inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2"
+                        }
+                      >
                         <span className="sr-only">Open main menu</span>
                         {open ? (
                           <XIcon className="block h-6 w-6" aria-hidden="true" />
@@ -317,9 +323,9 @@ const Work = () => {
             )}
           </Disclosure>
 
-          <div className="main-content">
-            <section id="#works" className="py-8">
-              <div className="text-gray-600 pl-20 ">
+          <div className="main-content container px-2 ">
+            <section id="#works" className="py-8 container">
+              <div className="text-gray-600 ">
                 <p className="text-4xl font-bold main-clr">My Projects</p>
                 <div>
                   Over the past few years I’ve had the chance to work on
@@ -436,7 +442,7 @@ const Work = () => {
                         <div className="text-center"></div>
                         <a
                           href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvqsPsGRpBWNHQRJJwhhKgBFffXVxLBJzSJCQFhkHCwlsghBCXRmwPCPRZRckMLvTnsbQq"
-                          className="text-base font-medium text-center text-3xl"
+                          className=" font-medium text-center text-3xl"
                           target="_blank"
                           rel="noopener noreferrer"
                         >

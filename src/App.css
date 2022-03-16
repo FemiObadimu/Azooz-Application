@@ -29,7 +29,7 @@
 }
 
 .special {
-  font-family: "Fruktur", cursive;
+  font-family: "Fruktur", cursive !important;
 }
 
 .main-clr {

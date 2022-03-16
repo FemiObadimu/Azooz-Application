@@ -270,7 +270,13 @@ const About = () => {
                           </span>
                         </span>
                       </Switch>
-                      <Disclosure.Button className="bg-white inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2">
+                      <Disclosure.Button
+                        className={
+                          enabled
+                            ? " inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500  focus:outline-none focus:ring-2 focus:ring-offset-2"
+                            : "bg-white inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2"
+                        }
+                      >
                         <span className="sr-only">Open main menu</span>
                         {open ? (
                           <XIcon className="block h-6 w-6" aria-hidden="true" />
@@ -313,9 +319,9 @@ const About = () => {
             )}
           </Disclosure>
 
-          <div className="main-content">
+          <div className="main-content container px-2 ">
             <div>
-              <div className="text-gray-600 pl-20 py-10 " data-aos="fade-up">
+              <div className="text-gray-600  py-10 " data-aos="fade-up">
                 <p className="text-4xl font-bold main-clr">Summary</p>
                 <div>
                   <p className="text-gray-600 py-2 ">
@@ -350,7 +356,7 @@ const About = () => {
                 </div>
               </div>
 
-              <div className="text-gray-600 pl-20 py-20 " data-aos="fade-up">
+              <div className="text-gray-600 py-20 " data-aos="fade-up">
                 <p className="text-4xl font-bold main-clr">Contributions</p>
                 <div>
                   <p className="text-gray-600 py-2">
@@ -363,13 +369,13 @@ const About = () => {
                 </div>
               </div>
 
-              <div className="text-gray-600 pl-20 py-20 " data-aos="fade-up">
+              <div className="text-gray-600 py-20 " data-aos="fade-up">
                 <p className="text-4xl font-bold main-clr">Work Experience</p>
 
                 {/* Images Goes Here */}
               </div>
 
-              <div className="text-gray-600 pl-20 py-20 " data-aos="fade-up">
+              <div className="text-gray-600 py-20 " data-aos="fade-up">
                 <p className="text-4xl font-bold main-clr">
                   Skills & Expertise
                 </p>
@@ -396,7 +402,7 @@ const About = () => {
                 </div>
               </div>
 
-              <div className="text-gray-600 pl-20 py-20 " data-aos="fade-up">
+              <div className="text-gray-600 py-20 " data-aos="fade-up">
                 <p className="text-4xl font-bold main-clr">
                   Open to Opportunities
                 </p>
@@ -441,7 +447,7 @@ const About = () => {
                         <div className="text-center"></div>
                         <a
                           href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvqsPsGRpBWNHQRJJwhhKgBFffXVxLBJzSJCQFhkHCwlsghBCXRmwPCPRZRckMLvTnsbQq"
-                          className="text-base font-medium text-center text-3xl"
+                          className=" font-medium text-center text-3xl"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
