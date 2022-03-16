@@ -507,7 +507,7 @@ const Home = () => {
                               <div className="text-center"></div>
                               <a
                                 href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvqsPsGRpBWNHQRJJwhhKgBFffXVxLBJzSJCQFhkHCwlsghBCXRmwPCPRZRckMLvTnsbQq"
-                                className="text-base font-medium text-center text-3xl"
+                                className=" font-medium text-center text-3xl"
                                 target="_blank"
                                 rel="noopener noreferrer"
                               >
